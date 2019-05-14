@@ -22,9 +22,10 @@ list (APPEND X_SOURCES "Sources/main.cpp")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${X_SOURCE_DIR}/Scripts")
 
 find_package(SDL2 REQUIRED)
+find_package(SDL2_image REQUIRED)
 
-include_directories(${X_HEADERS} ${SDL2_INCLUDE_DIR})
+include_directories(${X_HEADERS} ${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIR})
 
 add_executable(sample ${X_SOURCES})
 
-target_link_libraries(sample ${SDL2_LIBRARY})
+target_link_libraries(sample ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARIES})
