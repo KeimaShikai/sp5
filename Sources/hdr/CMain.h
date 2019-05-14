@@ -1,6 +1,9 @@
 #pragma once
 #include <SDL2/SDL.h>
 
+#ifndef CMAIN_H
+#define CMAIN_H
+
 class CMain
 {
 	private:
@@ -14,3 +17,5 @@ class CMain
 
 		void loop();
 };
+
+#endif

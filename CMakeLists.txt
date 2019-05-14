@@ -17,6 +17,8 @@ list (APPEND X_HEADERS "Sources/hdr")
 #src
 list (APPEND X_SOURCES "Sources/hdr/CMain.h")
 list (APPEND X_SOURCES "Sources/src/CMain.cpp")
+list (APPEND X_SOURCES "Sources/hdr/Ball.h")
+list (APPEND X_SOURCES "Sources/src/Ball.cpp")
 list (APPEND X_SOURCES "Sources/main.cpp")
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${X_SOURCE_DIR}/Scripts")
